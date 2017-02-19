@@ -1,4 +1,4 @@
-# electron_angular2_boilerplate
+# electron_angular2_simple
 
 A simple desktop app using electron (http://electron.atom.io/) and angular 2 (https://angular.io/).
 
