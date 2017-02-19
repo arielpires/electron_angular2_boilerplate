@@ -7,14 +7,13 @@ You must have:
 - node and npm: https://docs.npmjs.com/getting-started/installing-node
 
 To run this example:
-1. - Clone this repo in your machine: git clone https://github.com/arielpires/electron_angular2_boilerplate;
-2. - Install the dependencies: npm install;
-3. - Run the app: npm start;
+1. Clone this repo in your machine
+2. Install the dependencies: npm install
+3. Run the app: npm start
 
-**Note**: This  is only a really simple example project from where you can get started with Electron and Angular 2. This was created based on [this article](https://medium.com/@DenysVuika/using-angular-2-with-electron-a9fa0715cf12#.tn811raqf "Article")
--  created by [Denys Vuika](https://github.com/DenisVuyka "DenisVuyka"), the [Electron quickstart repository](https://github.com/electron/electron-quick-start "Electron") and the  [Angular quickstart repository](https://github.com/angular/quickstart "Angular").
+**Note**: This  is a really simple example project from where you can get started with Electron and Angular 2. This was created based on [this article](https://medium.com/@DenysVuika/using-angular-2-with-electron-a9fa0715cf12#.tn811raqf "Article") created by [Denys Vuika](https://github.com/DenisVuyka "DenisVuyka"), the [Electron quickstart repository](https://github.com/electron/electron-quick-start "Electron") and the  [Angular quickstart repository](https://github.com/angular/quickstart "Angular").
 
-I wrote a simple step by step tutorial to create this app, it is good to follow if you want to guarantee the latest versions of the libs: [Tutorial](./tutorial.md).
+I wrote a [simple step by step tutorial](./tutorial.md) to create this app, it is good to follow if you want to guarantee the latest versions of the libs: [Tutorial](./tutorial.md).
 
 #TODO
 1. Tests;
