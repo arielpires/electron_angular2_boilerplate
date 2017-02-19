@@ -1,6 +1,7 @@
 ##Steps to create this example from scratch:
 
 **Electron**:
+
 1. Create a folder
 2. Create a new app with npm: `npm init`. **Change the entry point to main.js instead of index.js**
 3. Install Electron and save to your dev dependencies: `npm install --save-dev electron`
