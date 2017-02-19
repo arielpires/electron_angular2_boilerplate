@@ -18,8 +18,7 @@ You are done with the Electron part! To run the app just type `npm start`
       "start": "tsc && concurrently \"npm run tsc:w\" \"electron .\" ",
       "tsc": "tsc",
       "tsc:w": "tsc -w"
-      }
-      ```
+      }      
 2. Get the dependencies and the dev dependencies from the [Angular quickstart repository](https://github.com/angular/quickstart) and put it in your package.json. Note that in this example I didn't use all the dependencies.
 3. Create the following files on the root of your project based on this repo:
 - tsconfig.json;
