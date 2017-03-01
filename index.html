@@ -25,5 +25,34 @@
     We are using Node.js <script>document.write(process.versions.node)</script>,
     Chromium <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.
+  <h1>This is to test sqlite (watch the console):</h1>
+      <input type="button" value="teste sqlite3" id="min-btn">
   </body>
+  <script>
+      var sqlite3 = require('sqlite3').verbose();
+
+      document.getElementById("min-btn").addEventListener("click", function (e) {
+
+        const path = require('path');
+        const dbPath = path.resolve(__dirname, '../nfe.db3');
+        const db = new sqlite3.Database(dbPath);
+
+        db.serialize(function() {
+          db.run("CREATE TABLE lorem (info TEXT)");
+
+          var stmt = db.prepare("INSERT INTO lorem VALUES (?)");
+          for (var i = 0; i < 10; i++) {
+            stmt.run("Ipsum " + i);
+          }
+          stmt.finalize();
+
+          db.each("SELECT rowid AS id, info FROM lorem", function(err, row) {
+            console.log(row.id + ": " + row.info);
+          });
+        });
+        db.close();
+      });
+
+
+  </script>
 </html>

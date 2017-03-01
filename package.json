@@ -6,7 +6,10 @@
   "scripts": {
     "start": "tsc && concurrently \"npm run tsc:w\" \"electron .\" ",
     "tsc": "tsc",
-    "tsc:w": "tsc -w"
+    "tsc:w": "tsc -w",
+    "package-win": "electron-packager . NFC-Desktop --platform=win32 --asar=true --out=release-builds --overwrite --version-string.CompanyName=LUME --version-string.FileDescription=LUME --version-string.ProductName=\"NFC-Desktop\"",
+    "create-installer-win": "node installers/windows/createinstaller.js",
+    "rebuild": "electron-rebuild -f -w sqlite3"
   },
   "repository": {
     "type": "git",
@@ -35,7 +38,8 @@
     "core-js": "^2.4.1",
     "rxjs": "5.0.1",
     "systemjs": "0.19.40",
-    "zone.js": "^0.7.4"
+    "zone.js": "^0.7.4",
+    "sqlite3": "^3.1.8"
   },
   "devDependencies": {
     "electron": "^1.4.15",
@@ -43,6 +47,9 @@
     "typescript": "~2.0.10",
     "tslint": "^3.15.1",
     "@types/node": "^6.0.46",
-    "@types/core-js": "^0.9.34"
+    "@types/core-js": "^0.9.34",
+    "electron-packager": "^8.5.2",
+    "electron-rebuild": "^1.5.7",
+    "electron-winstaller": "^2.5.2"
   }
 }
