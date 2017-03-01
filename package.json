@@ -7,7 +7,7 @@
     "start": "tsc && concurrently \"npm run tsc:w\" \"electron .\" ",
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-    "package-win": "electron-packager . NFC-Desktop --platform=win32 --asar=true --out=release-builds --overwrite --version-string.CompanyName=LUME --version-string.FileDescription=LUME --version-string.ProductName=\"NFC-Desktop\"",
+    "package-win": "electron-packager . App --platform=win32 --asar=true --out=release-builds --overwrite --version-string.CompanyName=LUME --version-string.FileDescription=LUME --version-string.ProductName=\"App\"",
     "create-installer-win": "node installers/windows/createinstaller.js",
     "rebuild": "electron-rebuild -f -w sqlite3"
   },

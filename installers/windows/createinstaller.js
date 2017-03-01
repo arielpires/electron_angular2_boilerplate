@@ -14,11 +14,11 @@ function getInstallerConfig () {
     const outPath = path.join(rootPath, 'release-builds')
 
     return Promise.resolve({
-       appDirectory: path.join(outPath, 'NFC-Desktop-win32-x64/'),
+       appDirectory: path.join(outPath, 'App-win32-x64/'),
        authors: 'Ariel Pires',
        noMsi: true,
        outputDirectory: path.join(outPath, 'windows-installer'),
-       exe: 'NFC-Desktop.exe',
-       setupExe: 'NfcDesktopInstaller.exe'
+       exe: 'App.exe',
+       setupExe: 'AppInstaller.exe'
    })
 }
