@@ -34,7 +34,7 @@
       document.getElementById("min-btn").addEventListener("click", function (e) {
 
         const path = require('path');
-        const dbPath = path.resolve(__dirname, '../nfe.db3');
+        const dbPath = path.resolve(__dirname, 'test.db3');
         const db = new sqlite3.Database(dbPath);
 
         db.serialize(function() {
